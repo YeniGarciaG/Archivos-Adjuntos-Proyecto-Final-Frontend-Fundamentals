@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce - Inicio</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bootstrap demo</title>
@@ -36,276 +34,277 @@
 
 
     </header>
-    <nav>
-        <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Nosotros</a></li>
-            <li><a href="">Tienda</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Galeria</a></li>
-            <li><a href="">Contacto</a></li>
+    
 
-        </ul>
-
-
-    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    
+        <div class="container-fluid">
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" style="background-color: rgb(135, 135, 238);">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3 text-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
     <nav>
         <ul></ul>
     </nav>
-    <section id="hero">
-        <img src="./principal.jpg" alt="imagen hero principal">
-    </section>
-    <main>
-        <h2>Nuestros de Productos</h2>
 
-        <!--SECCION 1-->
-        <section id="seccion-1">
+    <article class="hero-image">
+      <div class="d-flex flex-column d-flex justify-content-center align-items-center text-center">
+        <h1>Tienda en linea</h1>
+        
+      </div>
+    </article>
 
-            <!--ARTICULO 1-->
-            <article id="articulo-1">
+     
+    <main class="py=3 py=3 px-xs-3 px-sm-5 px-lg-5">
+        <h2 class="mt-4 text-center">Nuestros de Productos</h2>
 
-                <!--COLUMNA 1-->
-                <div class="columna-1 producto-1">
-                    <img src="./producto1.jpg" alt="PRODUCTO 1">
 
+<!--SECCION 1-->
+        <div class="card" style="width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-6">
+              
+                <img src="./producto1.jpg" class="img-fluid rounded-start" alt="Producto1">
+              </div>
+              <div class="col" style="background-color: #037BC0;">
+                <div class="card-body text-white p-4 text-center d-flex flex-column justify-content-center align-items-center" style="text-align: center;">
+                  <h3 class="card-title">Producto 1</h3>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex minus, alias
+                    minima, consequuntur mollitia id voluptatem nobis eum saepe nisi est! Ratione explicabo
+                    voluptatem exercitationem quod, dolorem voluptatibus atque in!</p>
+                  <p class="card-text"><small class="text-body-secondary">$ 12,000.00</small></p>
+                  <button class="boton1 shadow bg-success py-2 px-3" data-bs-target="#producto1">
+                    Agregar al carrito
+                   </button>
+                  
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <!--COLUMNA 2-->
-                <div style="background-color: #037BC0;" class="columna-2 producto-1">
-                    <h3>Producto 1</h3> <!-- TITULO DEL PRODUCTO1-->
+      <!--SECCION 2-->
 
-                    <!--DESCRIPCION PRODUCTO 1-->
-                    <p class="txt-descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex minus, alias
-                        minima, consequuntur mollitia id voluptatem nobis eum saepe nisi est! Ratione explicabo
-                        voluptatem exercitationem quod, dolorem voluptatibus atque in!</p>
 
-                    <span> <!--PRECIO PRODUCTO 1-->
-                        $12.000.00
-                    </span>
-                    <button>Agregar al carrito</button> <!--BOTON AGREGAR AL CARRITO-->
-
+        <div class="row g-0">
+            <div class="col-sm-6 lg-6 mb-3 mb-sm-0 py-3 px-3">
+              <div class="card">
+                
+                <img src="./producto2.jpg" class="img-fluid rounded-start" alt="Producto2">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center" style="background-color: #037BC0" style="text-align: center;">
+                  <h5 class="card-title">Producto 2</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex minus, alias
+                    minima, consequuntur mollitia id voluptatem nobis eum saepe nisi est! Ratione explicabo
+                    voluptatem exercitationem quod, dolorem voluptatibus atque in!</p>
+                    <button class="boton2 shadow bg-success py-2 px-3" data-bs-target="#producto2">
+                      Agregar al carrito
+                     </button>
+                  
+                </div> 
+              </div>
+            </div>
+            <div class="col-sm-6 lg-6 py-3 px-3">
+              <div class="card">
+                <img src="./producto3.jpg" class="img-fluid rounded-start" alt="Producto3">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center" style="background-color: #037BC0" style="text-align: center;">
+                  <h5 class="card-title">Producto 3</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex minus, alias
+                    minima, consequuntur mollitia id voluptatem nobis eum saepe nisi est! Ratione explicabo
+                    voluptatem exercitationem quod, dolorem voluptatibus atque in!</p>
+                    <button class="boton3 shadow btn-bounce bg-success py-2 px-3" data-bs-toggle="modal" data-bs-target="#producto3">
+                      Agregar al carrito
+                     </button>
+                  
                 </div>
-
-            </article>
-        </section>
-
-
-        <!--SECCION 2-->
-        <section id="seccion-2">
-
-            <!--ARTICULO 2-->
-            <article id="articulo-2">
-                <img src="./producto2.jpg" alt="PRODUCTO 2">
-
-
-                <!--COLUMNA 1-->
-                <div style="background-color: #037BC0;" class="columna-1 producto-2">
-                    <h3>Producto 2</h3> <!-- TITULO DEL PRODUCTO2-->
-
-                    <!--DESCRIPCION PRODUCTO 2-->
-                    <p class="txt-descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex minus, alias
-                        minima, consequuntur mollitia id voluptatem nobis eum saepe nisi est! Ratione explicabo
-                        voluptatem exercitationem quod, dolorem voluptatibus atque in!</p>
-
-                    <span> <!--PRECIO PRODUCTO 2-->
-                        $12.000.00
-                    </span>
-                    <button>Agregar al carrito</button> <!--BOTON AGREGAR AL CARRITO-->
-
-                </div>
-
-            </article>
-
-
-
-            <!--ARTICULO 3-->
-            <article id="articulo-3">
-                <img src="./producto3.jpg" alt="PRODUCTO 3">
-
-
-                <!--COLUMNA 2-->
-                <div style="background-color: #037BC0;" class="columna-2 producto-3">
-                    <h3>Producto 3</h3> <!-- TITULO DEL PRODUCTO3-->
-
-                    <!--DESCRIPCION PRODUCTO 3-->
-                    <p class="txt-descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex minus, alias
-                        minima, consequuntur mollitia id voluptatem nobis eum saepe nisi est! Ratione explicabo
-                        voluptatem exercitationem quod, dolorem voluptatibus atque in!</p>
-
-                    <span> <!--PRECIO PRODUCTO 3-->
-                        $12.000.00
-                    </span>
-                    <button>Agregar al carrito</button> <!--BOTON AGREGAR AL CARRITO-->
-
-                </div>
-
-            </article>
-        </section>
+              </div>
+            </div>
+          </div>
 
 
         <!--SECCION 3-->
-        <section id="seccion-3">
-
-            <!--ARTICULO 4-->
-            <article id="articulo-4">
-                <img src="./producto4.jpg" alt="PRODUCTO 4">
 
 
-                <!--COLUMNA 1-->
-                <div style="background-color: #037BC0;" class="columna-1 producto-4">
-                    <h3>Producto 4</h3> <!-- TITULO DEL PRODUCTO4-->
+  
+        <section id="seccion-3" class="d-flex">
 
-                    <!--DESCRIPCION PRODUCTO 4-->
-                    <p class="txt-descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex minus, alias
+            <div class="row g-0">
+                <div class="col-6 xs-12 sm-6 lg-6 align-items-center gap-3">
+                  <div class="card">
+                    
+                    <img src="./producto4.jpg" class="img-fluid rounded-start" alt="Producto4">
+                    <div class="card-body text-white p-4 text-center d-flex flex-column justify-content-center align-items-center gap-3" style="background-color: #037BC0;">
+                      <h5 class="card-title">Producto 4</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex minus, alias
                         minima, consequuntur mollitia id voluptatem nobis eum saepe nisi est! Ratione explicabo
                         voluptatem exercitationem quod, dolorem voluptatibus atque in!</p>
-
-                    <span> <!--PRECIO PRODUCTO 4-->
-                        $12.000.00
-                    </span>
-                    <button>Agregar al carrito</button> <!--BOTON AGREGAR AL CARRITO-->
-
-                </div>
-
-            </article>
-
-            <!--ARTICULO 5-->
-            <article id="articulo-5">
-                <img src="./producto5.jpg" alt="PRODUCTO 5">
-
-
-                <!--COLUMNA 2-->
-                <div style="background-color: #037BC0;" class="columna-2 producto-5">
-                    <h3>Producto 5</h3> <!-- TITULO DEL PRODUCTO5-->
-
-                    <!--DESCRIPCION PRODUCTO 5-->
-                    <p class="txt-descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex minus, alias
-                        minima, consequuntur mollitia id voluptatem nobis eum saepe nisi est! Ratione explicabo
-                        voluptatem exercitationem quod, dolorem voluptatibus atque in!</p>
-
-                    <span> <!--PRECIO PRODUCTO 5-->
-                        $12.000.00
-                    </span>
-                    <button>Agregar al carrito</button> <!--BOTON AGREGAR AL CARRITO-->
-
-                </div>
-
-            </article>
-
-            <!--ARTICULO 6-->
-            <article id="articulo-6">
-                <img src="./producto6.jpg" alt="PRODUCTO 6">
-
-
-                <!--COLUMNA 3-->
-                <div style="background-color: #037BC0;" class="columna-3 producto-6">
-                    <h3>Producto 6</h3> <!-- TITULO DEL PRODUCTO 6-->
-
-                    <!--DESCRIPCION PRODUCTO 6-->
-                    <p class="txt-descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex minus, alias
-                        minima, consequuntur mollitia id voluptatem nobis eum saepe nisi est! Ratione explicabo
-                        voluptatem exercitationem quod, dolorem voluptatibus atque in!</p>
-
-                    <span> <!--PRECIO PRODUCTO 6-->
-                        $12.000.00
-                    </span>
-                    <button>Agregar al carrito</button> <!--BOTON AGREGAR AL CARRITO-->
-
-                </div>
-
-            </article>
-
-            <!-- SECCION CATEGORIAS-->
-            <H2>Categorias de productos</H2>
-
-            <!--COLUMNA 1 SECCION CATEGORIAS-->
-
-            <div class="container text-center">
-                <div class="row align-items-end">
-                  <div class="col"> <img src="./categoria1.jpg" alt="categoria1">
-                 Oficina
+                        <button class="boton4 shadow bg-success py-2 px-3" data-bs-target="#producto4">
+                          Agregar al carrito
+                         </button>
+                    </div>  
                   </div>
-                  <div class="col"> <img src="./categoria2.jpg" alt="categoria2">
-                    Hogar
-                  </div>
-                  <div class="col"> <img src="./categoria3.jpg" alt="categoria3">
-                    Cocina
+                </div>
+                <div class="col-6 xs-12 sm-6 lg-6 align-items-center gap-3">
+                  <div class="card">
+                    <img src="./producto5.jpg" class="img-fluid rounded-start" alt="Producto5">
+                    <div class="card-body text-white p-4 text-center d-flex flex-column justify-content-center align-items-center gap-3" style="background-color: #037BC0;">
+                      <h5 class="card-title">Producto 5</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex minus, alias
+                        minima, consequuntur mollitia id voluptatem nobis eum saepe nisi est! Ratione explicabo
+                        voluptatem exercitationem quod, dolorem voluptatibus atque in!</p>
+                        <button class="boton5 shadow bg-success py-2 px-3" data-bs-target="#producto5">
+                          Agregar al carrito
+                         </button>
+                    </div>
                   </div>
                 </div>
               </div>
-
-
-
-              <!--flooter-->
-              <div class="container text-center">
-                <div class="row align-items-end">
-                  <div class="col"> 
-                 <h3>Categorias</h3>
-                 <nav>
-                    <ul>
-                        <li><a href="#">Cocina</a></li>
-                        <li><a href="#">Oficina</a></li>
-                        <li><a href="#">Jardin</a></li>
-                        <li><a href="#">Cochera</a></li>
-                        <li><a href="#">Dormitorios</a></li>
-                    </ul>
-            
-                </nav>
-                  </div>
-
-
-                  <div class="col"> 
-                    <h3>Sobre Nosotros</h3>
-                    <nav>
-                        <ul>
-                            <li><a href="">Nuestra historia</a></li>
-                            <li><a href="">Mision, Vision y Valores</a></li>
-                            <li><a href="">Carrera</a></li>
-                            <li><a href="">Politica de privacidad</li>
-                            <li><a href="">Terminos del servicio</a></li>
-                        </ul>
-                
-                    </nav>
-
-                  </div>
-                  
-
-
-
-                  <div class="col"> 
-                   <h3>Soporte</h3>
-                   <nav>
-                    <ul>
-                        <li><a href="">Preguntas frecuentes</a></li>
-                        <li><a href="">Ayuda en linea</a></li>
-                        <li><a href="">Confianza y Seguridad</a></li>
-                    </ul>
-            
-                </nav>
-
-
+              <div class="col-4 xs-12 sm-6 lg-6align-items-center gap-3">
+                <div class="card">
+                  <img src="./producto6.jpg" class="img-fluid rounded-start" alt="Producto6">
+                  <div class="card-body text-white p-4 text-center d-flex flex-column justify-content-center align-items-center gap-3" style="background-color: #037BC0;">
+                    <h5 class="card-title">Producto 6</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex minus, alias
+                      minima, consequuntur mollitia id voluptatem nobis eum saepe nisi est! Ratione explicabo
+                      voluptatem exercitationem quod, dolorem voluptatibus atque in!</p>
+                      <button class="boton5 shadow bg-success py-2 px-3" data-bs-target="#producto5">
+                      Agregar al carrito
+                     </button>
                   </div>
                 </div>
               </div>
+            </div>
+          </section>
+            
+            <!-- SECCION CATEGORIAS -->
+            <H2 class="mt-4 text-center">Categorias de productos</H2>
 
-             
-
-
-
+            <section id="Seccion-4" class="d-flex">
+                  <div class="col-4 align-items-center gap-3">
+                      <img src="./categoria1.jpg" class="img-fluid rounded-start" alt="categoria OFICI">
+                      <div class="card-body text-black p-4 text-center d-flex flex-column justify-content-center align-items-center gap-3">
+                        <h5 class="card-titl">Oficina</h5>
+                      </div>  
+                    </div>
+                  </div>
+                  <div class="col-4 align-items-center gap-3">
+                      <img src="./categoria2.jpg" class="img-fluid rounded-start" alt="Categoria Hogar">
+                      <div class="card-body text-black p-4 text-center d-flex flex-column justify-content-center align-items-center gap-3">
+                        <h5 class="card-titl">Hogar</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 align-items-center gap-3">
+                    <img src="./categoria3.jpg" class="img-fluid rounded-start" alt="categoria3">
+                    <div class="card-body p-4 text-center d-flex flex-column justify-content-center align-items-center gap-3">
+                      <h5 class="card-titl">Cocina</h5>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
               
 
 
-
+              <!--flooter-->
+              <footer class="text-center">
+                <section id="footer" class="d-flex flex-row">
+                    <!-- CATEGORIAS -->
+                    <div id="box-categorias" class="col-4 justify-content-star">
+                        <h3>Categorías</h3>
+                        <nav>
+                            <ul class="list">
+                                <li><a href="#" class="mb-4">Cocina</a></li>
+                                <li><a href="#" class="mb-4">Oficina</a></li>
+                                <li><a href="#" class="mb-4">Jardín</a></li>
+                                <li><a href="#" class="mb-4">Cochera</a></li>
+                                <li><a href="#" class="mb-4">Dormitorios</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- SOBRE NOSOTROS -->
+                    <div id="box-nosotros" class="col-4 justify-content-between ">
+                        <h3>Sobre Nosotros</h3>
+                        <nav>
+                            <ul class="list">
+                                <li><a href="#" class="mb-4">Nuestra Historia</a></li>
+                                <li><a href="#" class="mb-4">Misión, visión y valores</a></li>
+                                <li><a href="#" class="mb-4">Carrera</a></li>
+                                <li><a href="#" class="mb-4">Políticas de privacidad</a></li>
+                                <li><a href="#" class="mb-4">Términos del servicio.</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- SOPORTE -->
+                    <div id="box-soporte" class="col-4 justify-content-end">
+                        <h3>Soporte</h3>
+                        <nav>
+                            <ul class="list">
+                                <li><a href="#" class="mb-4">Preguntas frecuentes</a></li>
+                                <li><a href="#" class="mb-4">Ayuda en línea</a></li>
+                                <li><a href="#" class="mb-4">Confianza y seguridad.</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+        
+                <!-- DISCLAIMER -->
+                <section id="disclaimer" class="col-12">
+                    <p>Todos los derechos reservados. Tienda de Muebles</p>
+                </section>
+        
+            </footer>
         
 
+                  <!--Modales-->
 
+                  <div class="modal fade" id="producto2" tabindex="-1" aria-labelledby="producto2Label" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="producto2Label">Producto 2</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        Descripcion del producto 2
+                        <img src="./producto2.jpg" alt="producto-2">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            
-
-
-
-
-
+              </nav>
 
     </main>
 
